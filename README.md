@@ -25,14 +25,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+   This game is a simple number guessing game, meant to be dynamic to allow players to alter game difficulty, give helpful hints, and allow for endless gameplay.
+
+   Some bugs found in the original code included inconsistent numbers between number ranges (which also displayed incorrectly), an illogical number of attempts for each game mode, improper hints (i.e. if the actual number was higher than the guessed number, it would sometimes give a hint to go higher instead of lower), as well as no way to actually replay the game or properly change the difficulty. To fix these issues, I made sure the state variables would reset and a new number would generate within the difficulty ranges whenever the new game button was pressed or when the difficulty was changed. I also manually changed some hardcoded difficulty numbers, such as the number ranges for difficulty and the number of guesses. To make sure some game logic was properly fixed, I implemented pytests.
+
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
-
-## 🚀 Stretch Features
-
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+![alt text](screenshot.png)
